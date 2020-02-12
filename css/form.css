@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*  Подключаем готовые стили классов */
+.title__text {
+  color: #555555;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.subtitle__text {
+  color: #555555;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.link__btm {
+  width: 180px;
+  height: 50px;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-transition: background-color .3s, color .3s;
+  -o-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s; }
+
+.link__btm:hover {
+  background-color: #ffffff;
+  color: #c0301c; }

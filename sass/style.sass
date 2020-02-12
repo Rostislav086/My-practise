@@ -1,0 +1,404 @@
+//<Подключаем шрифты>=======================================================================================
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500,500i&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap');
+
+//<Подключаем файл обнуление>=========================================================================
+
+@import 'reset.sass'
+
+//</Подключение файлов стилей, форм и готовых классов>================================================
+
+@import 'form.sass'
+
+//<Оболочка>==========================================================================================
+
+.wrpap
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+.container
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0 auto
+	padding: 0px
+	width: 100%
+	width: 1120px
+
+@media (max-width: 1200px) 
+	.container
+		max-width: 970px  
+@media (max-width: 992.98px) 
+	.container 
+	 	max-width: 750px  
+@media (max-width: 767.98px)
+	.container 
+		max-width: none
+
+//</Оболочка>=========================================================================================
+
+//<Основной блок>=====================================================================================
+
+.header 
+	background-image: url('../img/back/back.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: center
+	&__top 
+		margin-top: 225px
+		&_text
+		width: 755px
+		text-align: center
+		color: #282828
+		font-family: "Exo"
+		font-size: 60px
+		font-weight: 100
+		line-height: 75px
+		letter-spacing: 2.4px
+	&__play
+		margin-top: 43px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 59px
+		height: 59px
+		background-color: #323969
+		border-radius: 50%
+		filter: opacity(60%)
+		&_link 
+			padding: 12px
+		&_img
+	&__btm
+		margin-top: 39px
+		&_link
+	&__bottom
+		margin-top: 19px
+		margin-bottom: 229px
+		&_text 
+			opacity: 0.6
+			color: #282828
+			font-family: Exo
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: 0.56px
+				
+.design
+	position: relative
+	margin-top: 191px
+	&__block
+		display: flex
+
+	&__left
+		width: 70%
+		&_titleblock
+		&_title
+		&_headlineblock
+			margin-top: 16px
+			width: 571px
+		&_headline
+		&_textblock
+			width: 571px
+			margin-bottom: 166px
+		&_text
+			margin-top: 40px
+			opacity: 0.66
+			color: #282828
+			font-family: Exo
+			font-size: 16px
+			font-weight: 500
+			line-height: 26px
+			letter-spacing: 0.64px
+	&__right
+		&_back
+
+.design:after
+	content: ''
+	position: absolute
+	bottom: -5px
+	right: 0
+	z-index: -50
+	width: 551px
+	height: 850px
+	background-color: #f6f5f3
+
+.design:before
+	content: ''
+	position: absolute
+	bottom: -150px
+	right: -245px
+	z-index: -30
+	width: 850px
+	height: 400px
+	background-color: #ff6d6d
+	opacity: 0.8
+	transform: rotate(-40deg)
+
+.features
+	background-image: url("../img/feauters/back.jpg")
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	z-index: 20
+	&__top
+		text-align: center
+	&__titleblock
+		padding-top: 140px
+	&__title
+	&__headlineblock
+		margin-bottom: 15px
+	&__headline
+	&__content
+		display: flex
+		justify-content: space-between
+		margin-top: 91px
+		margin-bottom: 184px
+		&_items
+			text-align: center
+			margin-right: 46px
+			&:last-child
+				margin-right: 0
+		&_img
+		&_headline
+			margin-top: 30px
+			color: #282828
+			font-family: Exo
+			font-size: 22px
+			font-weight: 500
+			letter-spacing: 0.88px
+		&_text
+			margin-top: 19px
+			opacity: 0.66
+			color: #282828
+			font-family: Exo
+			font-size: 16px
+			font-weight: 500
+			line-height: 26px
+			letter-spacing: 0.64px
+	
+.resposive 
+	padding-top: 93px
+	position: relative
+	&__block
+		display: flex
+		justify-content: space-between
+	&__left 
+		width: 40%
+		margin-right: 50px
+		margin-bottom: 90px
+		z-index: 2
+		&_imgblock 
+		&_img 
+	&__right 
+		padding-top: 48px
+		width: 492px
+		&_titleblock 
+		&_title 
+		&_headlineblock 
+			margin-top: 25px
+		&_headline 
+		&_textblock 
+			margin-top: 36px
+		&_text 
+
+.resposive:after
+	position: absolute
+	top: 150px
+	left: -370px
+	content: ''
+	width: 950px
+	height: 550px
+	background-color: #ff6d6d
+	opacity: 0.8
+	transform: rotate(50deg)
+	z-index: -1
+
+.command 
+	background-image: url('../img/back/back_black.jpg')
+	&__top
+		padding-top: 110px 
+		display: flex
+		justify-content: space-between
+		&_items 
+			width: 324px
+			text-align: center
+			margin-right: 65px
+			&:last-child
+				margin-right: 0
+		&_img 
+		&_name 
+			margin-top: 26px
+			color: #ffffff
+			font-family: Exo
+			font-size: 22px
+			font-weight: 500
+			letter-spacing: 0.88px
+		&_job 
+			margin-top: 12px
+			color: #ff6d6d
+			font-family: Exo
+			font-size: 16px
+			font-weight: 500
+		&_text 
+			margin-top: 37px
+			color: #ffffff
+			font-family: "Exo"
+			font-size: 16px
+			font-weight: 400
+			font-style: italic
+			line-height: 26px
+			letter-spacing: 0.64px
+	&__bottom 
+		width: 100%
+		display: flex
+		margin-top: 109px
+		margin-bottom: 95px
+		justify-content: space-around
+		&_logo 
+		&_img 
+
+.macbook 
+	&__titleblock 
+		margin: 108px 0px 0px 0px
+	&__title 
+	&__headlineblock 
+		margin: 15px 0px 0px 0px
+	&__heaedline 
+	&__textblock 
+		margin: 48px 0px 0px 0px
+		width: 647px
+		text-align: center
+	&__text 
+	&__imgblock 
+		margin: 93px 0px 0px 0px
+
+.over 
+	&__titleblock 
+		margin: 98px 0px 0px 0px
+	&__title 
+	&__headlineblock 
+		margin: 15px 0px 0px 0px
+	&__headline 
+		color: #fff
+	&__form 
+		margin: 96px 0px 0px 0px
+		display: flex
+		&_input 
+			width: 263px
+			height: 49px
+			border-radius: 3px
+			border: 1px solid #ffffff
+			background-color: #f6f5f3
+			opacity: 0.5
+			margin: 0px 30px 0px 
+			padding: 0px 29px
+			font-family: Exo
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 0.64px
+		&_linkblock 
+			width: 258px
+			height: 50px
+			text-align: center
+			padding-top: 16px
+			transition: background-color .3s
+			&:hover
+				background-color: #ff6d6d
+		&_link 
+			transition: color .3s
+			color: #ff6d6d
+			&:hover
+				color: #ffffff
+	&__sign 
+		margin: 52px 0px 85px 0px
+		&_text 
+			opacity: 0.6
+			color: #f6f5f3
+			font-family: Exo
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.64px
+
+.footer
+	position: relative
+	margin: 96px 0px 0px 0px
+	&:before
+		position: absolute
+		top: -250px
+		right: -100px
+		content: ''
+		width: 250px
+		height: 400px
+		background-color: #ff6d6d
+		opacity: 0.8
+		transform: rotate(-45deg)
+		z-index: -10
+	&__block
+		display: flex
+		justify-content: space-between
+		width: 100%
+	&__logo 
+		margin: 0px 67px 0px 0px
+		&_imgblock 
+		&_textblock
+			margin: 23px 0px 0px 0px
+			width: 245px
+		&_text
+			opacity: 0.56
+			color: #282828
+			font-family: Exo
+			font-size: 14px
+			font-weight: 500
+			line-height: 26px
+			letter-spacing: 0.56px
+	&__support 
+	&__menu 
+	&__about 
+
+.newsletter 
+	&__input 
+		position: relative
+		&:after
+			position: absolute
+			top: 0
+			right: 0
+			content: url(../img/footer/airplane.png)
+			width: 52px
+			height: 49px
+			text-align: center
+			line-height: 55px
+			box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25)
+			border-radius: 3px
+			border: 1px solid #ff6d6d
+			background-color: #ff6d6d
+		&_form 
+			width: 263px
+			height: 49px
+			padding-left: 29px
+			padding-right: 57px
+			border-radius: 3px
+			border: 1px solid #4e4e5e
+			background-color: #f6f5f3
+			opacity: 0.4
+			font-family: Exo
+			font-size: 16px
+			font-weight: 400
+			line-height: 75px
+			text-transform: uppercase
+			letter-spacing: 0.64px
+	&__icon
+	&__icons
+		margin: 19px 0px 0px 0px
+		text-align: center
+		&_link
+			margin: 0px 25px 0px 0px
+			color: #4e4e5e
+
+
+
+
